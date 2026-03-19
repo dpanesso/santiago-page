@@ -672,7 +672,7 @@ footer {
         z-index: 2;
     }
 
-    .site-nav-links {
+    .js .site-nav-links {
         position: absolute;
         top: calc(100% + 0.55rem);
         left: 0;
@@ -692,7 +692,7 @@ footer {
         transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s ease;
     }
 
-    .site-nav-links a {
+    .js .site-nav-links a {
         display: block;
         padding: 0.9rem 1rem;
         background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
@@ -707,7 +707,7 @@ footer {
         margin-right: 0;
     }
 
-    .site-nav-toggle {
+    .js .site-nav-toggle {
         display: inline-grid;
         gap: 0.28rem;
         width: 2.5rem;
@@ -719,7 +719,7 @@ footer {
         cursor: pointer;
     }
 
-    .site-nav-backdrop {
+    .js .site-nav-backdrop {
         display: block;
         position: fixed;
         inset: 0;
@@ -739,27 +739,27 @@ footer {
         transition: transform 0.22s ease, opacity 0.22s ease;
     }
 
-    body.nav-open .site-nav-links {
+    .js body.nav-open .site-nav-links {
         opacity: 1;
         visibility: visible;
         transform: translateY(0) scale(1);
     }
 
-    body.nav-open .site-nav-backdrop {
+    .js body.nav-open .site-nav-backdrop {
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
     }
 
-    body.nav-open .site-nav-toggle span:nth-child(1) {
+    .js body.nav-open .site-nav-toggle span:nth-child(1) {
         transform: translateY(6px) rotate(45deg);
     }
 
-    body.nav-open .site-nav-toggle span:nth-child(2) {
+    .js body.nav-open .site-nav-toggle span:nth-child(2) {
         opacity: 0;
     }
 
-    body.nav-open .site-nav-toggle span:nth-child(3) {
+    .js body.nav-open .site-nav-toggle span:nth-child(3) {
         transform: translateY(-6px) rotate(-45deg);
     }
 
