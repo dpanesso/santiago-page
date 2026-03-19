@@ -15,6 +15,13 @@ A professional profile website for Dr. Santiago Panesso, showcasing his medical 
 1. Open `index.html` in your web browser
 2. The page will load with the default content
 
+## Project Structure
+
+- `index.html` is the production homepage intended for deployment
+- `design-experiments/` contains alternate design drafts that are not intended to be the primary public page
+- `css/style.css` is the production stylesheet
+- `images/` stores shared assets such as the profile image
+
 ## Customization
 
 ### Content

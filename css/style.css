@@ -74,6 +74,30 @@ a {
     margin: 0 auto;
 }
 
+.site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.4rem;
+    align-items: center;
+    padding: 0 0 1.4rem;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 1.35rem;
+}
+
+.site-nav a {
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible {
+    color: var(--secondary);
+}
+
 .hero-card {
     position: relative;
     padding-top: 1.15rem;
@@ -269,7 +293,7 @@ section h2,
 
 .contact-bar {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1rem;
 }
 
@@ -285,6 +309,12 @@ section h2,
     text-decoration: none;
     color: var(--primary);
     font-weight: 700;
+}
+
+.profile-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem 1rem;
 }
 
 .contact-item a:hover,
@@ -552,6 +582,16 @@ footer {
     .hero-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+    }
+
+    .site-nav {
+        gap: 0.65rem 1rem;
+        padding-bottom: 1.1rem;
+        margin-bottom: 1.1rem;
+    }
+
+    .site-nav a {
+        font-size: 0.85rem;
     }
 
     .hero-card::before {
